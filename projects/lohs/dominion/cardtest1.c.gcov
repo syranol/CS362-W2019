@@ -1,7 +1,7 @@
         -:    0:Source:cardtest1.c
         -:    0:Graph:cardtest1.gcno
         -:    0:Data:cardtest1.gcda
-        -:    0:Runs:1
+        -:    0:Runs:3
         -:    0:Programs:1
         -:    1:#include "dominion.h"
         -:    2:#include <stdio.h>
@@ -13,44 +13,44 @@
         -:    8:{
         -:    9:
         -:   10:	//Set cards 
-        1:   11:	int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        3:   11:	int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
         -:   12:		//Establish game
         -:   13:	struct gameState G;
         -:   14:
         -:   15:	//Start game
-        1:   16:	initializeGame(2, k, 1, &G);
+        3:   16:	initializeGame(2, k, 1, &G);
         -:   17:
-        1:   18:	printf("Game initialized correctly \n");
-        1:   19:	printf("Card: Garden Unit Testing \n"); 
+        3:   18:	printf("Game initialized correctly \n");
+        3:   19:	printf("Card: Garden Unit Testing \n"); 
         -:   20:
         -:   21:
-        1:   22:	gainCard(gardens, &G, 1, 1);
+        3:   22:	gainCard(gardens, &G, 1, 1);
         -:   23:
-        1:   24:	int cardCounter = fullDeckCount(1,0,&G);
-        1:   25:	int checkCard = cardEffect(gardens,0,0,0,&G,0,0);
+        3:   24:	int cardCounter = fullDeckCount(1,0,&G);
+        3:   25:	int checkCard = cardEffect(gardens,0,0,0,&G,0,0);
         -:   26:
         -:   27:	//Check if correct card selected
-        1:   28:	if(checkCard == -1){
-        1:   29:		printf("Garden card successfully selected \n");
-        1:   30:		printf("Unit Test Result: Passed \n");
-        1:   31:	}
+        3:   28:	if(checkCard == -1){
+        3:   29:		printf("Garden card successfully selected \n");
+        3:   30:		printf("Unit Test Result: Passed \n");
+        3:   31:	}
         -:   32:	else{
     #####:   33:		printf("Garden card failed selection \n");
     #####:   34:		printf("Unit Test Result: Failed \n");
         -:   35:	}
         -:   36:
-        1:   37:	int checkPoint = scoreFor(1, &G);
+        3:   37:	int checkPoint = scoreFor(1, &G);
         -:   38:
         -:   39:	//If the points is 4 then garden added the right amount of point
-        1:   40:	if(checkPoint != 4)
+        3:   40:	if(checkPoint != 4)
         -:   41:	{
-        1:   42:		printf("Player score is correct\n");
-        1:   43:		printf("Unit Test Result: Passed \n");
-        1:   44:	}
+        3:   42:		printf("Player score is correct\n");
+        3:   43:		printf("Unit Test Result: Passed \n");
+        3:   44:	}
         -:   45:	else{
     #####:   46:		printf("Player score is wrong \n");
     #####:   47:		printf("Unit Test Result: Failed \n");
         -:   48:	}
         -:   49:	
-        1:   50:	return 0;
+        3:   50:	return 0;
         -:   51:}

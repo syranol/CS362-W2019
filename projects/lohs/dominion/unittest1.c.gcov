@@ -1,7 +1,7 @@
         -:    0:Source:unittest1.c
         -:    0:Graph:unittest1.gcno
         -:    0:Data:unittest1.gcda
-        -:    0:Runs:1
+        -:    0:Runs:5
         -:    0:Programs:1
         -:    1:#include "dominion.h"
         -:    2:#include <stdio.h>
@@ -13,28 +13,28 @@
         -:    8:{
         -:    9:
         -:   10:	//Set cards 
-        1:   11:	int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        5:   11:	int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
         -:   12:		//Establish game
         -:   13:	struct gameState G;
         -:   14:
         -:   15:	//Start game
-        1:   16:	initializeGame(2, k, 1, &G);
-        1:   17:	printf("WhoseTurn unit testing \n"); 
+        5:   16:	initializeGame(2, k, 1, &G);
+        5:   17:	printf("WhoseTurn unit testing \n"); 
         -:   18:
-        1:   19:	printf("\n");
+        5:   19:	printf("\n");
         -:   20:
         -:   21:	int checker;
-        1:   22:	checker = G.whoseTurn;
+        5:   22:	checker = G.whoseTurn;
         -:   23:
         -:   24:
-        1:   25:	if (whoseTurn(&G) == checker)
+        5:   25:	if (whoseTurn(&G) == checker)
         -:   26:	{
-        1:   27:		printf("Checking current turn for players. \n");
-        1:   28:		printf("Unit Test Result : Passed \n");
-        1:   29:	}
+        5:   27:		printf("Checking current turn for players. \n");
+        5:   28:		printf("Unit Test Result : Passed \n");
+        5:   29:	}
         -:   30:	else{
     #####:   31:		printf("Checking current turn for players. \n");
     #####:   32:		printf("Unit Test Result : Failed \n");
         -:   33:	}
-        1:   34:	return 0;
+        5:   34:	return 0;
         -:   35:}

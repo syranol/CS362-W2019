@@ -1,7 +1,7 @@
         -:    0:Source:unittest4.c
         -:    0:Graph:unittest4.gcno
         -:    0:Data:unittest4.gcda
-        -:    0:Runs:1
+        -:    0:Runs:5
         -:    0:Programs:1
         -:    1:#include "dominion.h"
         -:    2:#include <stdio.h>
@@ -13,44 +13,44 @@
         -:    8:{
         -:    9:
         -:   10:	//Set cards 
-        1:   11:	int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        5:   11:	int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
         -:   12:		//Establish game
         -:   13:	struct gameState G;
         -:   14:
         -:   15:	//Start game
-        1:   16:	initializeGame(2, k, 1, &G);
-        1:   17:	printf("isGameOver Unit Test\n"); 
+        5:   16:	initializeGame(2, k, 1, &G);
+        5:   17:	printf("isGameOver Unit Test\n"); 
         -:   18:
-        1:   19:	printf("\n");
+        5:   19:	printf("\n");
         -:   20:
         -:   21:	int checker;
-        1:   22:	checker = G.whoseTurn;
-        1:   23:G.supplyCount[province] = 0;
+        5:   22:	checker = G.whoseTurn;
+        5:   23:G.supplyCount[province] = 0;
         -:   24:
-        1:   25:	if (G.supplyCount[province] == 0)
+        5:   25:	if (G.supplyCount[province] == 0)
         -:   26:	{
-        1:   27:		printf("Setting all three supply to 0, running isGameover. \n");
-        1:   28:		printf("Unit Test Result : Passed \n");
-        1:   29:	}
+        5:   27:		printf("Setting all three supply to 0, running isGameover. \n");
+        5:   28:		printf("Unit Test Result : Passed \n");
+        5:   29:	}
         -:   30:	else{
     #####:   31:		printf("Setting supply to 0, running isGameover. \n");
     #####:   32:		printf("Unit Test Result : Failed \n");
         -:   33:	}
         -:   34:
-        1:   35:	printf("Resetting\n");
+        5:   35:	printf("Resetting\n");
         -:   36:
-        1:   37:	G.supplyCount[province] = 0;
+        5:   37:	G.supplyCount[province] = 0;
         -:   38:
-        1:   39:	if (G.supplyCount[province] == 0)
+        5:   39:	if (G.supplyCount[province] == 0)
         -:   40:	{
-        1:   41:		printf("Setting providence pile to 0, running isGameover. \n");
-        1:   42:		printf("Unit Test Result : Passed \n");
-        1:   43:	}
+        5:   41:		printf("Setting providence pile to 0, running isGameover. \n");
+        5:   42:		printf("Unit Test Result : Passed \n");
+        5:   43:	}
         -:   44:	else{
     #####:   45:		printf("Setting providence pile to 0, running isGameover. \n");
     #####:   46:		printf("Unit Test Result : Failed \n");
         -:   47:	}
         -:   48:
         -:   49:
-        1:   50:	return 0;
+        5:   50:	return 0;
         -:   51:}

@@ -43,42 +43,50 @@ unittestresults.out: unittest1.c unittest2.c unittest3.c unittest4.c cardtest4.c
 	gcc -o unittest1 -g unittest1.c dominion.c rngs.c $(CFLAGS)
 	./unittest1 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
+	gcov unittest1.c >> unittestresults.out
 
 	echo "Unit Test 2: Result" >> unittestresults.out
 	gcc -o unittest2 -g unittest2.c dominion.c rngs.c $(CFLAGS)
 	./unittest2 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
+	gcov unittest2.c >> unittestresults.out
 
 	echo "Unit Test 3: Result" >> unittestresults.out
 	gcc -o unittest3 -g unittest3.c dominion.c rngs.c $(CFLAGS)
 	./unittest3 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
+	gcov unittest3.c >> unittestresults.out
 
 	echo "Unit Test 4: Result" >> unittestresults.out
 	gcc -o unittest4 -g unittest4.c dominion.c rngs.c $(CFLAGS)
 	./unittest4 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
+	gcov unittest4.c >> unittestresults.out
 
 	echo "Card Test 1: Result" >> unittestresults.out
 	gcc -o cardtest1 -g cardtest1.c dominion.c rngs.c $(CFLAGS)
 	./cardtest1 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
+	gcov cardtest1.c >> unittestresults.out
 
 	echo "Card Test 2: Result" >> unittestresults.out
 	gcc -o cardtest2 -g cardtest2.c dominion.c rngs.c $(CFLAGS)
 	./cardtest2 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
+	gcov cardtest2.c >> unittestresults.out
 
 	echo "Card Test 3: Result" >> unittestresults.out
 	gcc -o cardtest3 -g cardtest3.c dominion.c rngs.c $(CFLAGS)
 	./cardtest3 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
+	gcov cardtest3.c >> unittestresults.out
 
 	echo "Card Test 4 Result" >> unittestresults.out
 	gcc -o cardtest4 -g cardtest4.c dominion.c rngs.c $(CFLAGS)
 	./cardtest4 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
-	
+	gcov cardtest4.c >> unittestresults.out
+
 all: playdom player 
 
 clean:

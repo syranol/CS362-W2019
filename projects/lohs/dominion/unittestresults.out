@@ -9,6 +9,10 @@ File 'dominion.c'
 Lines executed:44.00% of 650
 dominion.c:creating 'dominion.c.gcov'
 
+File 'unittest1.c'
+Lines executed:83.33% of 12
+unittest1.c:creating 'unittest1.c.gcov'
+
 Unit Test 2: Result
 
 EndTurn unit testing 
@@ -22,6 +26,10 @@ File 'dominion.c'
 Lines executed:44.00% of 650
 dominion.c:creating 'dominion.c.gcov'
 
+File 'unittest2.c'
+Lines executed:76.92% of 26
+unittest2.c:creating 'unittest2.c.gcov'
+
 Unit Test 3: Result
 numHandCards checking
 
@@ -30,6 +38,10 @@ Unit Test Result : Passed
 File 'dominion.c'
 Lines executed:44.00% of 650
 dominion.c:creating 'dominion.c.gcov'
+
+File 'unittest3.c'
+Lines executed:83.33% of 12
+unittest3.c:creating 'unittest3.c.gcov'
 
 Unit Test 4: Result
 isGameOver Unit Test
@@ -43,6 +55,10 @@ File 'dominion.c'
 Lines executed:44.00% of 650
 dominion.c:creating 'dominion.c.gcov'
 
+File 'unittest4.c'
+Lines executed:80.95% of 21
+unittest4.c:creating 'unittest4.c.gcov'
+
 Card Test 1: Result
 Game initialized correctly 
 Card: Garden Unit Testing 
@@ -54,6 +70,10 @@ File 'dominion.c'
 Lines executed:44.00% of 650
 dominion.c:creating 'dominion.c.gcov'
 
+File 'cardtest1.c'
+Lines executed:80.95% of 21
+cardtest1.c:creating 'cardtest1.c.gcov'
+
 Card Test 2: Result
 Game initialized correctly 
 Card: Smithy Unit Testing 
@@ -64,6 +84,10 @@ Unit Test Result: Failed
 File 'dominion.c'
 Lines executed:44.00% of 650
 dominion.c:creating 'dominion.c.gcov'
+
+File 'cardtest2.c'
+Lines executed:72.22% of 18
+cardtest2.c:creating 'cardtest2.c.gcov'
 
 Card Test 3: Result
 Game initialized correctly 
@@ -77,5 +101,9 @@ Unit Test Result: Failed
 File 'dominion.c'
 Lines executed:44.00% of 650
 dominion.c:creating 'dominion.c.gcov'
+
+File 'cardtest3.c'
+Lines executed:70.83% of 24
+cardtest3.c:creating 'cardtest3.c.gcov'
 
 Card Test 4 Result
