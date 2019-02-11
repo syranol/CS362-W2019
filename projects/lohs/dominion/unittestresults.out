@@ -1,0 +1,81 @@
+Result for running UniteTest Results:
+ 
+Unit Test 1: Result
+WhoseTurn unit testing 
+
+Checking current turn for players. 
+Unit Test Result : Passed 
+File 'dominion.c'
+Lines executed:44.00% of 650
+dominion.c:creating 'dominion.c.gcov'
+
+Unit Test 2: Result
+
+EndTurn unit testing 
+Checking if current player changed. 
+Unit Test Result : Passed 
+Checking if coins reseted. 
+Unit Test Result : Passed 
+Checking if hands were discarded. 
+Unit Test Result : Passed 
+File 'dominion.c'
+Lines executed:44.00% of 650
+dominion.c:creating 'dominion.c.gcov'
+
+Unit Test 3: Result
+numHandCards checking
+
+Checking full deck count. 
+Unit Test Result : Passed 
+File 'dominion.c'
+Lines executed:44.00% of 650
+dominion.c:creating 'dominion.c.gcov'
+
+Unit Test 4: Result
+isGameOver Unit Test
+
+Setting all three supply to 0, running isGameover. 
+Unit Test Result : Passed 
+Resetting
+Setting providence pile to 0, running isGameover. 
+Unit Test Result : Passed 
+File 'dominion.c'
+Lines executed:44.00% of 650
+dominion.c:creating 'dominion.c.gcov'
+
+Card Test 1: Result
+Game initialized correctly 
+Card: Garden Unit Testing 
+Garden card successfully selected 
+Unit Test Result: Passed 
+Player score is correct
+Unit Test Result: Passed 
+File 'dominion.c'
+Lines executed:44.00% of 650
+dominion.c:creating 'dominion.c.gcov'
+
+Card Test 2: Result
+Game initialized correctly 
+Card: Smithy Unit Testing 
+Smithy card successfully selected 
+Unit Test Result: Passed 
+Smithy card failed to added 2 cards 
+Unit Test Result: Failed 
+File 'dominion.c'
+Lines executed:44.00% of 650
+dominion.c:creating 'dominion.c.gcov'
+
+Card Test 3: Result
+Game initialized correctly 
+Card: Village Unit Testing 
+Village card successfully selected 
+Unit Test Result: Passed 
+Number of Cards in hand is correct
+Unit Test Result: Passed 
+Number pf actions avaialble is incorrect 
+Unit Test Result: Failed 
+File 'dominion.c'
+Lines executed:44.00% of 650
+dominion.c:creating 'dominion.c.gcov'
+
+Card Test 4 Result
