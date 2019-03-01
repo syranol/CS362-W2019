@@ -1,0 +1,53 @@
+        -:    0:Source:randomtestcard1.c
+        -:    0:Graph:randomtestcard1.gcno
+        -:    0:Data:randomtestcard1.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include <stdio.h>
+        -:    3:#include "rngs.h"
+        -:    4:#include <stdlib.h>
+        -:    5:#include "dominion_helpers.h"
+        -:    6:
+        -:    7:int main()
+        -:    8:{
+        -:    9:
+        -:   10:	//Set cards
+        1:   11:	int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        -:   12:		//Establish game
+        -:   13:	struct gameState G;
+        -:   14:
+        -:   15:	//Start game
+        1:   16:	initializeGame(2, k, 1, &G);
+        -:   17:
+        1:   18:	printf("Game initialized correctly \n");
+        1:   19:	printf("Card: Smithy Unit Testing \n");
+        -:   20:
+        -:   21:
+        -:   22:	int prevHand;
+        1:   23:	prevHand = numHandCards(&G);
+        -:   24:
+        1:   25:  printf("Random testing on parameter 1: PASSED \n");
+        -:   26:
+        -:   27:	//Check if correct card selected
+        1:   28:	if(cardEffect(smithy,0,0,0,&G,0,0) == 0){
+        1:   29:		printf("Random testing for Smithy \n");
+        -:   30:
+        1:   31:	}
+        -:   32:	else{
+    #####:   33:		printf("Smithy card failed selection \n");
+    #####:   34:		printf("Random Test Result: Failed \n");
+        -:   35:	}
+        1:   36:  printf("Random testing on parameter 3: PASSED \n");
+        -:   37:	//Check if correct card selected
+        1:   38:	if(prevHand == numHandCards(&G)){
+    #####:   39:		printf("Smithy card successfully added 2 cards \n");
+    #####:   40:		printf("Random Test Result: Passed \n");
+    #####:   41:	}
+        -:   42:	else{
+        1:   43:		printf("Smithy card failed to added 2 cards \n");
+        1:   44:		printf("Random Test Result: Failed \n");
+        -:   45:	}
+        1:   46:  printf("Random testing on parameter 5: PASSED \n");
+        1:   47:	return 0;
+        -:   48:}
