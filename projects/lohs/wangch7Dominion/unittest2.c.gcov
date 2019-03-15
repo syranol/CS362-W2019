@@ -1,7 +1,7 @@
         -:    0:Source:unittest2.c
         -:    0:Graph:unittest2.gcno
         -:    0:Data:unittest2.gcda
-        -:    0:Runs:5
+        -:    0:Runs:2
         -:    0:Programs:1
         -:    1:#include "dominion.h"
         -:    2:#include <stdio.h>
@@ -9,63 +9,56 @@
         -:    4:#include <stdlib.h>
         -:    5:#include "dominion_helpers.h"
         -:    6:
-function main called 5 returned 100% blocks executed 72%
         -:    7:int main()
         -:    8:{
         -:    9:
         -:   10:	//Set cards 
-        5:   11:	int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        2:   11:	int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
         -:   12:		//Establish game
         -:   13:	struct gameState G;
         -:   14:
         -:   15:	//Start game
-        5:   16:	initializeGame(2, k, 1, &G);
+        2:   16:	initializeGame(2, k, 1, &G);
         -:   17:
         -:   18:
-        5:   19:	printf("\n");
+        2:   19:	printf("\n");
         -:   20:
         -:   21:	int checker;
-        5:   22:	checker = G.whoseTurn;
+        2:   22:	checker = G.whoseTurn;
         -:   23:
-        5:   24:	printf("EndTurn unit testing \n"); 
+        2:   24:	printf("EndTurn unit testing \n"); 
         -:   25:
         -:   26:
-        5:   27:	int previous = 0;
+        2:   27:	int previous = 0;
         -:   28:
-        5:   29:	endTurn(&G);
+        2:   29:	endTurn(&G);
         -:   30:
-        5:   31:	if(whoseTurn(&G) != previous)
-branch  0 taken 100%
-branch  1 taken 0%
+        2:   31:	if(whoseTurn(&G) != previous)
         -:   32:	{
-        5:   33:		printf("Checking if current player changed. \n");
-        5:   34:		printf("Unit Test Result : Passed \n");
-        5:   35:	}
+        2:   33:		printf("Checking if current player changed. \n");
+        2:   34:		printf("Unit Test Result : Passed \n");
+        2:   35:	}
         -:   36:	else{
     #####:   37:		printf("Checking if current player changed. \n");
     #####:   38:		printf("Unit Test Result : Failed \n");
         -:   39:	}
-        5:   40:	if(previous == 0)
-branch  0 taken 100%
-branch  1 taken 0%
+        2:   40:	if(previous == 0)
         -:   41:	{
-        5:   42:		printf("Checking if coins reseted. \n");
-        5:   43:		printf("Unit Test Result : Passed \n");
-        5:   44:	}
+        2:   42:		printf("Checking if coins reseted. \n");
+        2:   43:		printf("Unit Test Result : Passed \n");
+        2:   44:	}
         -:   45:	else{
     #####:   46:		printf("Checking if coins changed. \n");
     #####:   47:		printf("Unit Test Result : Failed \n");
         -:   48:	}
-        5:   49:	if(whoseTurn(&G) == 1)
-branch  0 taken 100%
-branch  1 taken 0%
+        2:   49:	if(whoseTurn(&G) == 1)
         -:   50:	{
-        5:   51:		printf("Checking if hands were discarded. \n");
-        5:   52:		printf("Unit Test Result : Passed \n");
-        5:   53:	}
+        2:   51:		printf("Checking if hands were discarded. \n");
+        2:   52:		printf("Unit Test Result : Passed \n");
+        2:   53:	}
         -:   54:	else{
     #####:   55:		printf("Checking if hands were discarded. \n");
     #####:   56:		printf("Unit Test Result : Failed \n");
         -:   57:	}
-        5:   58:	return 0;
+        2:   58:	return 0;
         -:   59:}

@@ -1,0 +1,13 @@
+Game initialized correctly 
+Card: Smithy Unit Testing 
+Random testing on parameter 1: PASSED 
+Random testing for Smithy 
+Random testing on parameter 3: PASSED 
+Smithy card failed to added 2 cards 
+Random Test Result: Failed 
+Random testing on parameter 5: PASSED 
+COVERAGE:
+File 'randomtestcard1.c'
+Lines executed:75.00% of 20
+randomtestcard1.c:creating 'randomtestcard1.c.gcov'
+

@@ -1,0 +1,186 @@
+Result for running UniteTest Results:
+ 
+Unit Test 1: Result
+WhoseTurn unit testing 
+
+Checking current turn for players. 
+Unit Test Result : Passed 
+File 'unittest1.c'
+Lines executed:83.33% of 12
+unittest1.c:creating 'unittest1.c.gcov'
+
+Unit Test 2: Result
+
+EndTurn unit testing 
+Checking if current player changed. 
+Unit Test Result : Passed 
+Checking if coins reseted. 
+Unit Test Result : Passed 
+Checking if hands were discarded. 
+Unit Test Result : Passed 
+File 'unittest2.c'
+Lines executed:76.92% of 26
+unittest2.c:creating 'unittest2.c.gcov'
+
+Unit Test 3: Result
+numHandCards checking
+
+Checking full deck count. 
+Unit Test Result : Passed 
+File 'unittest3.c'
+Lines executed:83.33% of 12
+unittest3.c:creating 'unittest3.c.gcov'
+
+Unit Test 4: Result
+isGameOver Unit Test
+
+Setting all three supply to 0, running isGameover. 
+Unit Test Result : Passed 
+Resetting
+Setting providence pile to 0, running isGameover. 
+Unit Test Result : Passed 
+File 'unittest4.c'
+Lines executed:80.95% of 21
+unittest4.c:creating 'unittest4.c.gcov'
+
+Card Test 1: Result
+Game initialized correctly 
+Card: Garden Unit Testing 
+Garden card successfully selected 
+Unit Test Result: Passed 
+Player score is correct
+Unit Test Result: Passed 
+File 'cardtest1.c'
+Lines executed:80.95% of 21
+cardtest1.c:creating 'cardtest1.c.gcov'
+
+Card Test 2: Result
+Game initialized correctly 
+Card: Smithy Unit Testing 
+Smithy card successfully selected 
+Unit Test Result: Passed 
+Smithy card failed to added 2 cards 
+Unit Test Result: Failed 
+File 'cardtest2.c'
+Lines executed:72.22% of 18
+cardtest2.c:creating 'cardtest2.c.gcov'
+
+Card Test 3: Result
+Game initialized correctly 
+Card: Village Unit Testing 
+Village card successfully selected 
+Unit Test Result: Passed 
+Number of Cards in hand is correct
+Unit Test Result: Passed 
+Number pf actions avaialble is incorrect 
+Unit Test Result: Failed 
+File 'cardtest3.c'
+Lines executed:70.83% of 24
+cardtest3.c:creating 'cardtest3.c.gcov'
+
+Card Test 4 Result
+Game initialized correctly 
+Card: Adventurer Unit Testing 
+Adventuer card failed to added 2 cards 
+Unit Test Result: Failed 
+Adventuer card failed to discard card
+Unit Test Result: Failed 
+Adventurer card successfully selected 
+Unit Test Result: Passed 
+File 'cardtest4.c'
+Lines executed:68.00% of 25
+cardtest4.c:creating 'cardtest4.c.gcov'
+
+Result for running UniteTest Results:
+ 
+Unit Test 1: Result
+WhoseTurn unit testing 
+
+Checking current turn for players. 
+Unit Test Result : Passed 
+File 'unittest1.c'
+Lines executed:83.33% of 12
+unittest1.c:creating 'unittest1.c.gcov'
+
+Unit Test 2: Result
+
+EndTurn unit testing 
+Checking if current player changed. 
+Unit Test Result : Passed 
+Checking if coins reseted. 
+Unit Test Result : Passed 
+Checking if hands were discarded. 
+Unit Test Result : Passed 
+File 'unittest2.c'
+Lines executed:76.92% of 26
+unittest2.c:creating 'unittest2.c.gcov'
+
+Unit Test 3: Result
+numHandCards checking
+
+Checking full deck count. 
+Unit Test Result : Passed 
+File 'unittest3.c'
+Lines executed:83.33% of 12
+unittest3.c:creating 'unittest3.c.gcov'
+
+Unit Test 4: Result
+isGameOver Unit Test
+
+Setting all three supply to 0, running isGameover. 
+Unit Test Result : Passed 
+Resetting
+Setting providence pile to 0, running isGameover. 
+Unit Test Result : Passed 
+File 'unittest4.c'
+Lines executed:80.95% of 21
+unittest4.c:creating 'unittest4.c.gcov'
+
+Card Test 1: Result
+Game initialized correctly 
+Card: Garden Unit Testing 
+Garden card successfully selected 
+Unit Test Result: Passed 
+Player score is correct
+Unit Test Result: Passed 
+File 'cardtest1.c'
+Lines executed:80.95% of 21
+cardtest1.c:creating 'cardtest1.c.gcov'
+
+Card Test 2: Result
+Game initialized correctly 
+Card: Smithy Unit Testing 
+Smithy card successfully selected 
+Unit Test Result: Passed 
+Smithy card failed to added 2 cards 
+Unit Test Result: Failed 
+File 'cardtest2.c'
+Lines executed:72.22% of 18
+cardtest2.c:creating 'cardtest2.c.gcov'
+
+Card Test 3: Result
+Game initialized correctly 
+Card: Village Unit Testing 
+Village card successfully selected 
+Unit Test Result: Passed 
+Number of Cards in hand is correct
+Unit Test Result: Passed 
+Number pf actions avaialble is incorrect 
+Unit Test Result: Failed 
+File 'cardtest3.c'
+Lines executed:70.83% of 24
+cardtest3.c:creating 'cardtest3.c.gcov'
+
+Card Test 4 Result
+Game initialized correctly 
+Card: Adventurer Unit Testing 
+Adventuer card failed to added 2 cards 
+Unit Test Result: Failed 
+Adventuer card failed to discard card
+Unit Test Result: Failed 
+Adventurer card successfully selected 
+Unit Test Result: Passed 
+File 'cardtest4.c'
+Lines executed:68.00% of 25
+cardtest4.c:creating 'cardtest4.c.gcov'
+
